@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets</title>
+    <link rel="stylesheet" href="list.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <div class="big-div">
+      <div class="wrapper">
+        <div class="card">
+          <img src="earth.jpg" alt="Earth" />
+          <div class="info">
+            <h1>Earth</h1>
+            <p></p>
+            <a href="earthbio.html" class="btn">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card">
+          <img src="jupiter.jpeg" alt="Jupitor" />
+          <div class="info">
+            <h1>Jupiter</h1>
+            <p></p>
+            <a href="jupiterbio.html" class="btn">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card">
+          <img src="saturn.jpeg" alt="Saturn" />
+          <div class="info">
+            <h1>Saturn</h1>
+            <p></p>
+            <a href="saturnbio.html" class="btn">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</html>
